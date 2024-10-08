@@ -100,6 +100,24 @@ public class MenuService {
 
         return result > 0 ? true : false;
     }
+
+    public boolean deleteMenu(int deleteMenu) {
+        SqlSession sqlSession = getSqlSession();
+        int result = menuDAO.deleteMenu(sqlSession, deleteMenu);
+
+        if(result > 0 ){
+            sqlSession.commit();
+        }else{
+            sqlSession.rollback();
+        }
+
+        sqlSession.close();
+
+        return result > 0 ? true : false;
+
+    }
+
+
 }
 /* title. */
 /* comment. */

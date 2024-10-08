@@ -70,4 +70,9 @@
             MENU_CODE = #{menuCode}
     </update>
 
+<delete id="deleteMenu" parameterType="com.ohgiraffers.section01.xmlconfig.model.dto.MenuDTO">
+    DELETE FROM TBL_MENU WHERE MENU_CODE = #{menuCode}
+</delete>
+
+
 </mapper>

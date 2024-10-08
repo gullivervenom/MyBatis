@@ -108,7 +108,18 @@ public class MenuController {
     }
 
     public void deleteMenu(Map<String, String> parameter) {
+        int menuCode = Integer.parseInt(parameter.get("menuCode"));
 
+
+
+        if(menuService.deleteMenu(menuCode)){
+
+            printResult.printSuccessMessage("delete");
+
+        }else{
+            printResult.printErrorMessage("delete");
+
+        }
     }
 }
 /* title. */

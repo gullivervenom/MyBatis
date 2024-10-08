@@ -35,5 +35,11 @@ public class MenuDAO {
         return sqlSession.update("MenuMapper.updateMenu", modifyMenu);
 
     }
+
+
+    public int deleteMenu(SqlSession sqlSession, int deleteMenu) {
+
+        return sqlSession.delete("MenuMapper.deleteMenu", deleteMenu);
+    }
 }
 /* comment. */
