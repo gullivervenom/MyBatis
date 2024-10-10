@@ -1,12 +1,12 @@
-package com.ohgiraffers.section01.xmlconfig.model.dto;
+package com.ohgiraffers.section03.remix.model.dto;
 
-public class MenuDTO extends com.ohgiraffers.section03.remix.model.dto.MenuDTO {
+public class MenuDTO {
 
     private int menuCode;
     private String menuName;
     private int menuPrice;
     private int categoryCode;
-    private String oderableStatus;
+    private String orderableStatus;
 
     public MenuDTO()
     { }
@@ -18,7 +18,7 @@ public class MenuDTO extends com.ohgiraffers.section03.remix.model.dto.MenuDTO {
         this.menuName = menuName;
         this.menuPrice = menuPrice;
         this.categoryCode = categoryCode;
-        this.oderableStatus = oderableStatus;
+        this.orderableStatus = oderableStatus;
     }
 
     public int getMenuCode() {
@@ -54,11 +54,11 @@ public class MenuDTO extends com.ohgiraffers.section03.remix.model.dto.MenuDTO {
     }
 
     public String getOderableStatus() {
-        return oderableStatus;
+        return orderableStatus;
     }
 
     public void setOderableStatus(String oderableStatus) {
-        this.oderableStatus = oderableStatus;
+        this.orderableStatus = oderableStatus;
     }
 
     @Override
@@ -68,7 +68,7 @@ public class MenuDTO extends com.ohgiraffers.section03.remix.model.dto.MenuDTO {
                 ", menuName='" + menuName + '\'' +
                 ", menuPrice=" + menuPrice +
                 ", categoryCode=" + categoryCode +
-                ", oderableStatus='" + oderableStatus + '\'' +
+                ", oderableStatus='" + orderableStatus + '\'' +
                 '}';
     }
 }
